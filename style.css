@@ -1,0 +1,148 @@
+a{
+    text-decoration: none;
+    color: black !important;
+}
+
+li{
+    list-style: none;
+}
+
+.menu-icon{
+    font-size: 1.5rem;
+    display: none !important;
+}
+button{
+    background-color: #2e98e4;
+    padding: .5rem 2rem;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    transition: transform .3s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+button:active{
+    background-color: #1d87d5;
+}
+#active{
+    color: #194869 !important;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+#logo{
+    flex: 1;
+    font-size: 2rem;
+}
+.nav-link-wrapper{
+    display: flex;
+    flex: 0.4;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s;
+}
+.nav-link-wrapper a{
+    font-weight: bold;
+    transition: .3s;
+}
+.nav-link-wrapper a:hover{
+    color: #2e98e4 !important;
+}
+/* main content */
+.main-content{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-content img{
+    width: 400px;
+}
+/* left side  */
+.left-side h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.left-side span{
+    color: #2e98e4 !important;
+    font-size: 6rem;
+}
+.left-side button{
+    margin-top: 2rem;
+}
+.socail-media{
+    display: flex;
+    align-items: center;
+}
+.fa-brands{
+    color: black;
+    margin: 0rem .5rem;
+    font-size: 1.5rem;
+    transition: color .3s;
+}
+.fa-brands:hover{
+    color: #2e98e4 !important;
+}
+
+@media only screen and (max-width: 1200px){
+    .nav-link-wrapper{
+        flex: 0.5;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #active{
+        color: red !important;
+    }
+    .toggleMenu{
+        transform: translateX(-100%);
+    }
+
+    .left-side button{
+        margin-top: 1rem;
+    }
+    .menu-icon{
+        display: block !important;
+    }
+
+    .nav-link-wrapper{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: #2e98e4;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-link-wrapper a{
+        color: white !important;
+        margin-top: 1rem;
+        border-bottom: 1px solid white;
+
+    }
+    .main-content{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .main-content img{
+        width: 200px;
+    }
+
+    .left-side h1{
+        font-size: 2rem;
+    }
+    .left-side span{
+        font-size: 4rem;
+    }
+
+}
+
+/*rem=root em    vh stand for viewport hight*/
